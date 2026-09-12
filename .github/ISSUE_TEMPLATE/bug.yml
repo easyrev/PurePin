@@ -1,0 +1,27 @@
+name: Bug report / 问题反馈
+description: Report a capture, editing, pin, or launch problem.
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Issues are public. Do not attach private screenshots or unreviewed crash reports.'
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Include expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version information / 版本信息
+      description: 'PurePin → Help & Feedback… → Copy Support Info. This replaces your clipboard; review before pasting.'
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional context / 补充信息
+      description: 'Display size/scaling or sanitized examples. For a crash, start with its time and exception type; no complete unreviewed .ips files.'

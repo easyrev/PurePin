@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">PurePin 蓝色书签</title>
+  <rect width="1024" height="1024" rx="228" fill="#FDF4E7"/>
+  <path fill="#2E65F7" d="M356 196c-35.3 0-64 28.7-64 64v536c0 45.5 51.6 71.7 88.3 44.9L512 752l131.7 88.9C680.4 865.7 732 839.5 732 794V260c0-35.3-28.7-64-64-64H356Z"/>
+  <path fill="#8FB0FF" d="M620 196h48c35.3 0 64 28.7 64 64v104l-86.1-86.1C629.3 261.3 620 238.8 620 215.3V196Z"/>
+</svg>

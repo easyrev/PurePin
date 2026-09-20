@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">PurePin：截下来，标两笔，贴在手边</title>
+  <desc id="desc">功能示意图：在项目笔记中框选一块内容，用蓝色箭头指出重点，把一张配色参考贴在旁边。此图为原创插画，不是软件实拍截图。</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#E8E3DA" stroke-width="1" opacity=".5"/>
+    </pattern>
+    <linearGradient id="paper" x1="80" y1="20" x2="1260" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAF8F3"/><stop offset="1" stop-color="#EFEBE3"/>
+    </linearGradient>
+    <filter id="windowShadow" x="-20%" y="-20%" width="145%" height="155%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#253047" flood-opacity=".10"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#253047" flood-opacity=".04"/>
+    </filter>
+    <filter id="pinShadow" x="-30%" y="-30%" width="165%" height="185%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#23355B" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L9 5L1 9" stroke="#3565ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="820" rx="28" fill="url(#paper)"/>
+  <rect width="1440" height="820" rx="28" fill="url(#grid)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="70" y="65" font-size="16" font-weight="650" letter-spacing="3.5" fill="#747B83">A LITTLE TOOL FOR YOUR EVERYDAY.</text>
+    <circle cx="1212" cy="59" r="4" fill="#3565ED"/>
+    <text x="1226" y="65" font-size="16" fill="#747B83">PurePin for Mac</text>
+
+    <!-- Original workflow illustration. These are sample notes, not private screenshots. -->
+    <g filter="url(#windowShadow)">
+      <rect x="102" y="123" width="1026" height="511" rx="18" fill="#FFFFFF"/>
+      <path d="M120 123H1110C1120 123 1128 131 1128 141V175H102V141C102 131 110 123 120 123Z" fill="#F4F5F5"/>
+      <rect x="102.5" y="123.5" width="1025" height="510" rx="17.5" stroke="#DDE0E2"/>
+    </g>
+    <circle cx="129" cy="150" r="6" fill="#D4D7DB"/>
+    <circle cx="150" cy="150" r="6" fill="#D4D7DB"/>
+    <circle cx="171" cy="150" r="6" fill="#D4D7DB"/>
+    <text x="610" y="156" text-anchor="middle" font-size="17" fill="#858C96">一张截图，一点想法</text>
+
+    <text x="155" y="210" font-size="13" font-weight="600" letter-spacing="2.5" fill="#9097A0">PROJECT NOTES / 01</text>
+    <text x="158" y="287" font-size="43" font-weight="650" fill="#242F43">把想说的，</text>
+    <text x="158" y="345" font-size="43" font-weight="650" fill="#242F43">圈给对方看。</text>
+    <text x="160" y="390" font-size="20" fill="#7B8390">画个箭头，比来回解释更直接。</text>
+    <path d="M162 410C272 405 334 406 426 410" stroke="#3565ED" stroke-width="3" stroke-linecap="round"/>
+    <rect x="159" y="450" width="260" height="10" rx="5" fill="#E7EAF0"/>
+    <rect x="159" y="475" width="327" height="10" rx="5" fill="#EEF0F4"/>
+    <rect x="159" y="500" width="223" height="10" rx="5" fill="#EEF0F4"/>
+
+    <rect x="583" y="223" width="198" height="250" rx="11" fill="#EDF2FF"/>
+    <rect x="603" y="243" width="158" height="142" rx="6" fill="#D6E2FF"/>
+    <circle cx="682" cy="314" r="46" fill="#3565ED"/>
+    <path d="M658 286H706V348L682 333L658 348V286Z" fill="#F8FAFF"/>
+    <text x="604" y="418" font-size="20" font-weight="600" fill="#314770">这版就用蓝色</text>
+    <text x="604" y="447" font-size="15" fill="#8191AF">a small detail, kept close.</text>
+    <path d="M532 280C552 257 563 255 582 265" stroke="#3565ED" stroke-width="4" stroke-linecap="round"/>
+    <path d="M568 251L584 265L565 272" stroke="#3565ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M839 224H1074M839 251H1021M839 286H1074M839 313H1041" stroke="#E9ECF0" stroke-width="10" stroke-linecap="round"/>
+    <rect x="838" y="357" width="70" height="64" rx="8" fill="#E7EDFD"/>
+    <rect x="922" y="357" width="70" height="64" rx="8" fill="#F8E9DA"/>
+    <rect x="1006" y="357" width="70" height="64" rx="8" fill="#DFE8DF"/>
+    <path d="M839 454H1011M839 481H1063" stroke="#E9ECF0" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- The selected region is deliberately separate from the floating reference card. -->
+    <path d="M121 175H1109V615H121V175ZM141 194V525H799V194H141Z" fill="#263552" fill-opacity=".12" fill-rule="evenodd"/>
+    <rect x="141" y="194" width="658" height="331" rx="1" stroke="#3565ED" stroke-width="2"/>
+    <g fill="white" stroke="#3565ED" stroke-width="2">
+      <rect x="137" y="190" width="8" height="8" rx="1"/><rect x="795" y="190" width="8" height="8" rx="1"/>
+      <rect x="137" y="521" width="8" height="8" rx="1"/><rect x="795" y="521" width="8" height="8" rx="1"/>
+      <rect x="466" y="190" width="8" height="8" rx="1"/><rect x="466" y="521" width="8" height="8" rx="1"/>
+      <rect x="137" y="355" width="8" height="8" rx="1"/><rect x="795" y="355" width="8" height="8" rx="1"/>
+    </g>
+
+    <g filter="url(#windowShadow)">
+      <rect x="183" y="551" width="574" height="56" rx="15" fill="#FFFFFF"/>
+      <rect x="183.5" y="551.5" width="573" height="55" rx="14.5" stroke="#E3E6EB"/>
+    </g>
+    <g stroke="#536077" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="205" y="569" width="21" height="19" rx="2"/>
+      <path d="M249 588L269 570"/>
+      <path d="M294 588L314 569M303 569H314V580" stroke="#3565ED" stroke-width="3"/>
+      <path d="M343 587L346 579L358 567L364 573L352 585L343 587Z"/>
+      <path d="M391 569H413M402 569V589"/>
+      <path d="M444 573H463M444 579H463M444 585H463M450 568V590M457 568V590"/>
+      <path d="M497 568C497 568 488 578 488 583C488 594 506 594 506 583C506 578 497 568 497 568Z"/>
+      <path d="M565 573C550 564 541 573 542 584M542 575V585H552"/>
+      <path d="M604 569H617L614 579L621 584H600L607 579L604 569ZM610 584V592"/>
+      <path d="M528 565V594" stroke="#E2E6ED" stroke-width="1.5"/>
+    </g>
+    <rect x="647" y="561" width="99" height="36" rx="9" fill="#3565ED"/>
+    <path d="M665 570H677V584H665V570ZM661 575V589H674" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="705" y="585" text-anchor="middle" font-size="16" font-weight="600" fill="white">复制</text>
+
+    <path d="M1155 222C1250 245 1289 297 1264 367" stroke="#9BA9BF" stroke-width="2" stroke-dasharray="5 8" stroke-linecap="round"/>
+    <path d="M1255 354L1264 368L1277 358" stroke="#9BA9BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1167" y="207" font-size="22" font-weight="550" fill="#536987" transform="rotate(7 1167 207)">贴在手边</text>
+
+    <g transform="rotate(5 1090 531)">
+      <g filter="url(#pinShadow)">
+        <rect x="915" y="374" width="334" height="309" rx="5" fill="#FFFFFF"/>
+      </g>
+      <rect x="929" y="388" width="306" height="193" rx="2" fill="#D6E2FF"/>
+      <circle cx="1082" cy="484" r="65" fill="#3565ED"/>
+      <path d="M1048 443H1116V531L1082 510L1048 531V443Z" fill="#F8FAFF"/>
+      <text x="945" y="620" font-size="25" font-weight="650" fill="#314770">这版就用蓝色</text>
+      <text x="945" y="653" font-size="18" fill="#8B98AE">抬眼就能看见，不用来回切。</text>
+      <circle cx="1082" cy="377" r="13" fill="#E9EFFF" stroke="#B7CAFA"/>
+      <circle cx="1082" cy="376" r="5" fill="#3565ED"/>
+    </g>
+
+    <g transform="translate(106 709)">
+      <rect width="43" height="34" rx="7" fill="#FFFFFF" stroke="#D5D9E0"/>
+      <text x="21.5" y="23" text-anchor="middle" font-size="17" font-weight="600" fill="#536077">F1</text>
+      <text x="59" y="23" font-size="18" fill="#7D8794">截下来</text>
+      <path d="M142 17H175M169 11L175 17L169 23" stroke="#A0ABBC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="194" y="23" font-size="18" fill="#7D8794">标两笔</text>
+      <path d="M277 17H310M304 11L310 17L304 23" stroke="#A0ABBC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="329" y="23" font-size="18" fill="#7D8794">复制出去，或留在眼前</text>
+    </g>
+    <text x="1339" y="766" text-anchor="end" font-size="13" letter-spacing="1.5" fill="#8B9199">功能示意 · ILLUSTRATION</text>
+  </g>
+</svg>

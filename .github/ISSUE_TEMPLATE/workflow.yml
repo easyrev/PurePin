@@ -1,0 +1,13 @@
+name: Workflow feedback / 使用反馈
+description: Describe friction in capture, basic annotation, or pinning.
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What were you trying to do? / 你想完成什么操作？
+      description: Explain the current steps and what interrupts your work.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: 'PurePin focuses on capture, basic annotation, and pinning. OCR, AI, GIF, advanced editing, and cloud sync are outside its current scope.'

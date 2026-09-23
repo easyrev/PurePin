@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help / 使用与崩溃报告说明
+    url: https://github.com/easyrev/PurePin/blob/main/SUPPORT.md
+    about: Read this before sharing diagnostic information.

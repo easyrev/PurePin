@@ -19,7 +19,7 @@ and digging through features just to take a screenshot.
 
 | Capture | Edit | Pin |
 | :--- | :--- | :--- |
-| Capture a region, a window area, or the whole screen. Adjust the selection down to the pixel. | Annotate inside the selection with arrows, text, and freehand strokes. Undo and redo as you go. | Keep a screenshot or clipboard image on top. Move, resize, hide, and restore it. |
+| Capture a region, a window area, or the whole screen. Adjust the selection down to the pixel. | Annotate a capture or clipboard image with arrows, text, and freehand strokes. Undo and redo as you go. | Keep a screenshot or clipboard image on top. Move, resize, hide, and restore it. |
 
 No account or cloud history. Screenshots and image processing stay on your Mac. [Privacy →](PRIVACY.md)
 
@@ -45,13 +45,20 @@ Measured as total Dirty memory in macOS `footprint`. Display sizes, import paths
 
 **macOS 26+** · Apple Silicon / Universal (Apple Silicon + Intel)
 
-## Shortcuts
+## Installation and first launch
 
-Before your first capture, allow PurePin in **System Settings → Privacy & Security → Screen & System Audio Recording**. PurePin uses this permission for still screenshots. It does not record audio or require Accessibility, Camera, or Microphone access.
+Open the DMG, drag PurePin to Applications, and open it from there. For a release marked **not notarized**, macOS may block the first launch. After attempting to open PurePin, go to **System Settings → Privacy & Security**, find the message about PurePin near the bottom, and choose **Open Anyway**. Confirm the system prompt. See [Apple's instructions](https://support.apple.com/102445).
+
+On first launch, PurePin shows screen capture setup if permission is missing. Choose **Allow Screen Recording** and finish the macOS prompt. If needed, **Open System Settings** takes you to **Privacy & Security → Screen & System Audio Recording**. Enable PurePin; quit and reopen it if macOS asks. Once setup says you're ready, choose **Done**, then press **F1** yourself. Setup does not start or queue a screenshot.
+
+PurePin uses this permission for still screenshots. It does not record audio or require Accessibility, Camera, or Microphone access.
+
+## Shortcuts
 
 | Action | Default shortcut |
 | :--- | :--- |
 | Start a capture | <kbd>F1</kbd> |
+| Edit an image from the clipboard | <kbd>⌥</kbd> + <kbd>F1</kbd> |
 | Pin an image from the clipboard | <kbd>F3</kbd> |
 | Hide / restore all pins | <kbd>⇧</kbd> + <kbd>F3</kbd> |
 | Copy the capture and finish editing | <kbd>Return</kbd> or <kbd>⌘</kbd> + <kbd>C</kbd> |
@@ -60,6 +67,8 @@ Before your first capture, allow PurePin in **System Settings → Privacy & Secu
 | Undo / redo | <kbd>⌘</kbd> + <kbd>Z</kbd> / <kbd>⇧</kbd> + <kbd>⌘</kbd> + <kbd>Z</kbd> |
 
 If macOS uses the function keys for system controls, hold <kbd>fn</kbd> / Globe or choose another shortcut in Settings.
+
+To annotate an existing image, copy the image itself and choose **Edit Clipboard Image** from the menu bar. Zooming and panning only change the view; copying, saving, and pinning preserve the original pixel dimensions unless you crop the image. Cropping changes the output area and dimensions. Clipboard editing does not require screen recording permission.
 
 Drag a pin to move it, scroll to resize it, and double-click to close it. Right-click to copy, save, or restore its original size.
 

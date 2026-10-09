@@ -20,7 +20,9 @@ Start with reproduction steps, the app version, and the crash time. If details a
 
 - **Where is the app window?** PurePin lives in the menu bar. Opening it again shows Settings.
 - **F1 does nothing.** Try `fn` / Globe + F1, or change the shortcut in Settings.
-- **Capture fails.** Check screen recording permission in System Settings, then try again.
+- **macOS blocks the first launch.** For a release marked not notarized, attempt to open it, then go to System Settings → Privacy & Security and choose Open Anyway beside the PurePin message. See [Apple's instructions](https://support.apple.com/102445).
+- **Capture opens setup instead.** Finish screen recording setup, choose Done, then press F1 again. Setup never resumes the previous capture. If macOS asks you to quit and reopen PurePin, follow that prompt first.
+- **How do I annotate an existing image?** Copy the image itself, then choose **Edit Clipboard Image** from the menu bar or press `⌥F1`. Copying a file in Finder or copying an image URL does not put image bytes on the clipboard. Zooming and panning only change the view. Copying, saving, and pinning preserve the original pixel dimensions unless you crop the image, which changes the output area and dimensions.
 - **Pins disappear after quitting.** Pins are temporary references. Save images you want to keep.
 - **I need to hide private information.** Blur and mosaic effects may leave information that can be inferred. Inspect the exported image before sharing; cover sensitive areas with an opaque shape or remove them when needed.
 

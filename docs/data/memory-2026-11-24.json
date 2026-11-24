@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "recorded_local_date": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "metric": {
+    "name": "physical footprint",
+    "api": "task_vm_info.phys_footprint",
+    "unit": "MiB",
+    "bytes_per_unit": 1048576
+  },
+  "environment": {
+    "processor": "Apple M1 Pro",
+    "memory_gib": 32,
+    "os_version": "macOS 27.0.1",
+    "os_build": "26A434",
+    "architecture": "arm64",
+    "xcode_version": "27.2",
+    "xcode_build": "27B52",
+    "sdk_version": "macOS 27.2",
+    "display_points": [
+      1728,
+      1117
+    ],
+    "capture_pixels": [
+      3456,
+      2234
+    ],
+    "scale_factor": 2
+  },
+  "build": {
+    "product": "PurePin",
+    "version": "0.9.9",
+    "build_number": "98",
+    "revision": "f169eca4b3c5bac54680a9b0b1de4cd0beced9d2",
+    "configuration": "Release",
+    "benchmark_instrumentation": true,
+    "swift_source_sha256": "2eb23c46ea774c6a568151aa1d3cf40b793cdecbcf6b77681a41abe3963ffb38"
+  },
+  "protocol": {
+    "independent_sessions_per_scenario": 1,
+    "cycles_per_session": 20,
+    "startup_idle_seconds": 8,
+    "visible_seconds_per_cycle": 1,
+    "close_observation_seconds_per_cycle": 6,
+    "final_idle_seconds": 20,
+    "sampling_interval_seconds_approx": 0.1,
+    "capture": "Real screenshot; programmatic selection and operations",
+    "selection_width_fraction_approx": 0.6,
+    "selection_height_fraction_approx": 0.6,
+    "pin_count": 0
+  },
+  "plot": {
+    "quantity": "Last closed-phase physical footprint sample in each cycle",
+    "x": "Capture cycle",
+    "y": "MiB",
+    "y_axis_min": 0,
+    "smoothing": false
+  },
+  "limitations": [
+    "One independent process session per scenario; cycles are not independent experiments.",
+    "Release build includes measurement and drawing-time instrumentation. Values do not describe the ordinary distribution binary.",
+    "No frozen public input fixture was recorded for these sessions.",
+    "Final idle median covers the final 20 seconds; visible sampled maximum is not a kernel lifetime peak.",
+    "No long-term mixed workload, live Pin memory, multi-display, sleep/wake, or memory-pressure claims.",
+    "No cross-product comparison or performance ranking."
+  ],
+  "scenarios": [
+    {
+      "id": "cancel",
+      "label": "Cancel",
+      "run_id": "377FF144-9248-4F7E-AA21-113BD888C9D0",
+      "samples": 1628,
+      "executable_sha256": "6f76b7ab2d34a68a1f02c2bdf9676870cf10224018a8ddc18cb294bea61a47b8",
+      "original_csv_sha256": "63298273ebfc5156819a42bbe517ba365c56877661d5664c6a90054eab5130e4",
+      "source_summary_sha256": "173d3c1d67011a9416d36569030e7f479d0ccc09aad865479d875dab9c1d3fce",
+      "startup_idle_median_mib": 16.641448974609375,
+      "final_idle_median_mib": 21.516494750976562,
+      "visible_sampled_max_mib": 22.297744750976562,
+      "cycles": [
+        {
+          "cycle": 1,
+          "last_closed_mib": 20.969619750976562
+        },
+        {
+          "cycle": 2,
+          "last_closed_mib": 21.110244750976562
+        },
+        {
+          "cycle": 3,
+          "last_closed_mib": 21.125869750976562
+        },
+        {
+          "cycle": 4,
+          "last_closed_mib": 21.141494750976562
+        },
+        {
+          "cycle": 5,
+          "last_closed_mib": 21.110244750976562
+        },
+        {
+          "cycle": 6,
+          "last_closed_mib": 21.094619750976562
+        },
+        {
+          "cycle": 7,
+          "last_closed_mib": 21.078994750976562
+        },
+        {
+          "cycle": 8,
+          "last_closed_mib": 21.532119750976562
+        },
+        {
+          "cycle": 9,
+          "last_closed_mib": 21.625869750976562
+        },
+        {
+          "cycle": 10,
+          "last_closed_mib": 21.688369750976562
+        },
+        {
+          "cycle": 11,
+          "last_closed_mib": 21.719619750976562
+        },
+        {
+          "cycle": 12,
+          "last_closed_mib": 21.735244750976562
+        },
+        {
+          "cycle": 13,
+          "last_closed_mib": 21.735244750976562
+        },
+        {
+          "cycle": 14,
+          "last_closed_mib": 21.750869750976562
+        },
+        {
+          "cycle": 15,
+          "last_closed_mib": 21.750869750976562
+        },
+        {
+          "cycle": 16,
+          "last_closed_mib": 21.782119750976562
+        },
+        {
+          "cycle": 17,
+          "last_closed_mib": 22.032119750976562
+        },
+        {
+          "cycle": 18,
+          "last_closed_mib": 22.047744750976562
+        },
+        {
+          "cycle": 19,
+          "last_closed_mib": 21.766494750976562
+        },
+        {
+          "cycle": 20,
+          "last_closed_mib": 21.766494750976562
+        }
+      ]
+    },
+    {
+      "id": "copy",
+      "label": "Copy",
+      "run_id": "E8833A47-9F13-4B66-9460-441380084317",
+      "samples": 1649,
+      "executable_sha256": "6f76b7ab2d34a68a1f02c2bdf9676870cf10224018a8ddc18cb294bea61a47b8",
+      "original_csv_sha256": "daa383b014e6476bc2c50731975e48027dad03ad3f051d14608d9c89cc9570a8",
+      "source_summary_sha256": "1e3fd036bbf216c82b7559538a4eb6bc5246733b974247f82a027ad0f0aad40f",
+      "startup_idle_median_mib": 16.641448974609375,
+      "final_idle_median_mib": 32.657142639160156,
+      "visible_sampled_max_mib": 32.563392639160156,
+      "cycles": [
+        {
+          "cycle": 1,
+          "last_closed_mib": 25.047744750976562
+        },
+        {
+          "cycle": 2,
+          "last_closed_mib": 26.657142639160156
+        },
+        {
+          "cycle": 3,
+          "last_closed_mib": 26.969642639160156
+        },
+        {
+          "cycle": 4,
+          "last_closed_mib": 25.500892639160156
+        },
+        {
+          "cycle": 5,
+          "last_closed_mib": 26.625892639160156
+        },
+        {
+          "cycle": 6,
+          "last_closed_mib": 26.516517639160156
+        },
+        {
+          "cycle": 7,
+          "last_closed_mib": 25.016517639160156
+        },
+        {
+          "cycle": 8,
+          "last_closed_mib": 25.016517639160156
+        },
+        {
+          "cycle": 9,
+          "last_closed_mib": 26.250892639160156
+        },
+        {
+          "cycle": 10,
+          "last_closed_mib": 29.297767639160156
+        },
+        {
+          "cycle": 11,
+          "last_closed_mib": 30.813392639160156
+        },
+        {
+          "cycle": 12,
+          "last_closed_mib": 30.985267639160156
+        },
+        {
+          "cycle": 13,
+          "last_closed_mib": 30.985267639160156
+        },
+        {
+          "cycle": 14,
+          "last_closed_mib": 31.266517639160156
+        },
+        {
+          "cycle": 15,
+          "last_closed_mib": 29.579017639160156
+        },
+        {
+          "cycle": 16,
+          "last_closed_mib": 30.719642639160156
+        },
+        {
+          "cycle": 17,
+          "last_closed_mib": 31.860267639160156
+        },
+        {
+          "cycle": 18,
+          "last_closed_mib": 32.047767639160156
+        },
+        {
+          "cycle": 19,
+          "last_closed_mib": 32.282142639160156
+        },
+        {
+          "cycle": 20,
+          "last_closed_mib": 32.672767639160156
+        }
+      ]
+    },
+    {
+      "id": "vector",
+      "label": "Arrow + copy",
+      "run_id": "5AF08935-2398-44BB-9D61-F119B7A3E35E",
+      "samples": 1648,
+      "executable_sha256": "6f76b7ab2d34a68a1f02c2bdf9676870cf10224018a8ddc18cb294bea61a47b8",
+      "original_csv_sha256": "9b2453013fd3c0abf957df753f9b05a93ef4df2d11c58fab3be5fe892b9db14a",
+      "source_summary_sha256": "7e71afbc971b1c42f66c6231e727527f9cc5fa4fbbbdb1f41c4e822a57eddc75",
+      "startup_idle_median_mib": 16.73522186279297,
+      "final_idle_median_mib": 28.345008850097656,
+      "visible_sampled_max_mib": 41.438575744628906,
+      "cycles": [
+        {
+          "cycle": 1,
+          "last_closed_mib": 26.95404052734375
+        },
+        {
+          "cycle": 2,
+          "last_closed_mib": 31.81348419189453
+        },
+        {
+          "cycle": 3,
+          "last_closed_mib": 33.860382080078125
+        },
+        {
+          "cycle": 4,
+          "last_closed_mib": 34.23540496826172
+        },
+        {
+          "cycle": 5,
+          "last_closed_mib": 34.36040496826172
+        },
+        {
+          "cycle": 6,
+          "last_closed_mib": 35.17292785644531
+        },
+        {
+          "cycle": 7,
+          "last_closed_mib": 36.266700744628906
+        },
+        {
+          "cycle": 8,
+          "last_closed_mib": 28.407325744628906
+        },
+        {
+          "cycle": 9,
+          "last_closed_mib": 28.4229736328125
+        },
+        {
+          "cycle": 10,
+          "last_closed_mib": 28.0948486328125
+        },
+        {
+          "cycle": 11,
+          "last_closed_mib": 28.126121520996094
+        },
+        {
+          "cycle": 12,
+          "last_closed_mib": 27.454269409179688
+        },
+        {
+          "cycle": 13,
+          "last_closed_mib": 27.454269409179688
+        },
+        {
+          "cycle": 14,
+          "last_closed_mib": 27.65741729736328
+        },
+        {
+          "cycle": 15,
+          "last_closed_mib": 27.610565185546875
+        },
+        {
+          "cycle": 16,
+          "last_closed_mib": 26.751190185546875
+        },
+        {
+          "cycle": 17,
+          "last_closed_mib": 29.06371307373047
+        },
+        {
+          "cycle": 18,
+          "last_closed_mib": 29.15746307373047
+        },
+        {
+          "cycle": 19,
+          "last_closed_mib": 29.235610961914062
+        },
+        {
+          "cycle": 20,
+          "last_closed_mib": 28.391883850097656
+        }
+      ]
+    }
+  ]
+}

@@ -19,17 +19,17 @@ and digging through features just to take a screenshot.
 
 | Capture | Edit | Pin |
 | :--- | :--- | :--- |
-| Capture a region, a window area, or the whole screen. Adjust the selection down to the pixel. | Annotate a capture or clipboard image with arrows, text, and freehand strokes. Undo and redo as you go. | Keep a screenshot or clipboard image on top. Move, resize, hide, and restore it. |
+| Capture a region, a window area, or the whole screen across displays. Pick live `#RRGGBB` colors with the magnifier and adjust selections down to the pixel. | Annotate a capture or clipboard image with shapes, arrows, text, freehand strokes, blur, and mosaic. Undo and redo as you go. | Keep a screenshot or clipboard image on top with transparent background support. Move, resize, adjust opacity, hide, restore, or jump back into editing. |
 
 No account or cloud history. Screenshots and image processing stay on your Mac. [Privacy →](PRIVACY.md)
 
 ## Memory
 
-Three scenarios, 20 captures each. Median memory use during the final 20 seconds of idle time: **35.1–35.7 MiB**.
+Three scenarios, 20 captures each. Median memory use during the final 20 seconds of idle time: **21.5–32.7 MiB**.
 
-<img src="assets/memory-report.svg" width="960" alt="PurePin v0.9.0 memory after each of 20 capture cycles in three scenarios. Final idle medians range from 35.13 to 35.74 MiB." />
+<img src="assets/memory-report.svg" width="960" alt="PurePin v0.9.9 memory after each of 20 capture cycles in three scenarios. Final idle medians range from 21.52 to 32.66 MiB." />
 
-Measured with an instrumented Release build. The chart shows memory after each capture closes; the highest samples while capturing were 101–105 MiB. [Method and data →](docs/memory-report.md)
+Measured with an instrumented Release build. The chart shows memory after each capture closes; the highest samples while capturing were 22–41 MiB. [Method and data →](docs/memory-report.md)
 
 ### Pinning a large image: PurePin, Shottr, Snipaste
 
@@ -61,16 +61,21 @@ PurePin uses this permission for still screenshots. It does not record audio or 
 | Edit an image from the clipboard | <kbd>⌥</kbd> + <kbd>F1</kbd> |
 | Pin an image from the clipboard | <kbd>F3</kbd> |
 | Hide / restore all pins | <kbd>⇧</kbd> + <kbd>F3</kbd> |
-| Copy the capture and finish editing | <kbd>Return</kbd> or <kbd>⌘</kbd> + <kbd>C</kbd> |
+| Copy the pixel color under the magnifier | <kbd>C</kbd> |
+| Select the full display | <kbd>⌘</kbd> + <kbd>A</kbd> |
+| Copy the capture and finish editing | <kbd>Return</kbd>, <kbd>⌘</kbd> + <kbd>C</kbd>, or double-click inside |
 | Pin the current capture | <kbd>⌘</kbd> + <kbd>T</kbd> |
 | Save a PNG | <kbd>⌘</kbd> + <kbd>S</kbd> |
+| Adjust stroke width, font size, or blur/mosaic strength | <kbd>[</kbd> / <kbd>]</kbd> or scroll wheel |
 | Undo / redo | <kbd>⌘</kbd> + <kbd>Z</kbd> / <kbd>⇧</kbd> + <kbd>⌘</kbd> + <kbd>Z</kbd> |
 
-If macOS uses the function keys for system controls, hold <kbd>fn</kbd> / Globe or choose another shortcut in Settings.
+If macOS uses the function keys for system controls, hold <kbd>fn</kbd> / Globe, choose another shortcut, or clear any global shortcut in Settings.
 
-To annotate an existing image, copy the image itself and choose **Edit Clipboard Image** from the menu bar. Zooming and panning only change the view; copying, saving, and pinning preserve the original pixel dimensions unless you crop the image. Cropping changes the output area and dimensions. Clipboard editing does not require screen recording permission.
+Before locking a capture region, move the pointer across displays to switch screens, or right-click to step back and unlock an empty selection. Hold <kbd>Shift</kbd> while dragging to constrain squares and 45° lines or arrows.
 
-Drag a pin to move it, scroll to resize it, and double-click to close it. Right-click to copy, save, or restore its original size.
+To annotate an existing image, copy the image itself or copy an image file (including PNG, JPEG, HEIC, WebP, and TIFF) in Finder, then choose **Edit Clipboard Image** from the menu bar. Hold <kbd>Space</kbd> to pan and zoom up to 16×; zooming and panning only change the view, while copying, saving, and pinning preserve the original pixel dimensions unless you crop the image. Clipboard editing does not require screen recording permission.
+
+Drag a pin to move it, nudge it with arrow keys, scroll or pinch to resize it, hold <kbd>⌥</kbd> while scrolling to adjust opacity, and double-click to close it. Right-click or press <kbd>⌘</kbd> + <kbd>E</kbd> to copy, save, restore original size or opacity, or reopen the pin in the editor.
 
 ---
 

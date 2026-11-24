@@ -1,6 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
-  <title id="title">PurePin 蓝色书签</title>
-  <rect width="1024" height="1024" rx="228" fill="#FDF4E7"/>
-  <path fill="#2E65F7" d="M356 196c-35.3 0-64 28.7-64 64v536c0 45.5 51.6 71.7 88.3 44.9L512 752l131.7 88.9C680.4 865.7 732 839.5 732 794V260c0-35.3-28.7-64-64-64H356Z"/>
-  <path fill="#8FB0FF" d="M620 196h48c35.3 0 64 28.7 64 64v104l-86.1-86.1C629.3 261.3 620 238.8 620 215.3V196Z"/>
+  <title id="title">PurePin 蓝色折角书签</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF2EA"/>
+      <stop offset="100%" stop-color="#F6ECE2"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#6CB2FF"/>
+      <stop offset="48%" stop-color="#2D76F8"/>
+      <stop offset="100%" stop-color="#1752ED"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B9DDFF"/>
+      <stop offset="100%" stop-color="#87BEFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <path fill="url(#body)" d="M390 181H556V314C556 333.3 571.7 349 591 349H711C725.9 349 738 361.1 738 376V781C738 837 698 857 656 833L541 769C523 758 501 758 483 769L368 833C326 857 286 837 286 781V285C286 227.6 332.6 181 390 181Z"/>
+  <path fill="url(#fold)" d="M556 181V314C556 333.3 571.7 349 591 349H728Z"/>
 </svg>

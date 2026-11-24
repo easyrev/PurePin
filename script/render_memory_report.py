@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "docs/data/memory-2026-09-21.json"
+DATA = ROOT / "docs/data/memory-2026-11-24.json"
 OUTPUT = ROOT / "assets/memory-report.svg"
 COLORS = {"cancel": "#2864E8", "copy": "#088D96", "vector": "#424D5B"}
 PAPER = "#FAFAF7"
@@ -37,16 +37,20 @@ def render(png: Path | None = None) -> None:
     if data["metric"]["unit"] != "MiB" or data["plot"]["smoothing"]:
         raise ValueError("Figure expects unsmoothed MiB measurements")
 
+    recorded_date = data["recorded_local_date"]
+    version = data["build"]["version"]
+    env = data["environment"]
+    pixels = env["capture_pixels"]
     plt.rcParams.update({
         "font.family": "DejaVu Sans",
         "svg.fonttype": "path",
-        "svg.hashsalt": "purepin-memory-2026-09-21",
+        "svg.hashsalt": f"purepin-memory-{recorded_date}",
         "axes.unicode_minus": False,
     })
     fig = plt.figure(figsize=(14.4, 8.2), dpi=100, facecolor=PAPER)
     fig.text(0.066, 0.915, "Memory, measured.", color=INK, fontsize=31, weight="bold")
     fig.text(0.068, 0.863, "20 consecutive captures · memory after each close", color=MUTED, fontsize=16)
-    fig.text(0.967, 0.925, "PUREPIN v0.9.0", color=MUTED, fontsize=10.5, ha="right")
+    fig.text(0.967, 0.925, f"PUREPIN v{version}", color=MUTED, fontsize=10.5, ha="right")
 
     ax = fig.add_axes((0.076, 0.355, 0.89, 0.415), facecolor=PAPER)
     for scenario in data["scenarios"]:
@@ -86,16 +90,16 @@ def render(png: Path | None = None) -> None:
         fig.text(x, 0.094, f"Visible sampled peak: {scenario['visible_sampled_max_mib']:.2f} MiB", color=MUTED, fontsize=10.5)
     fig.text(
         0.068, 0.033,
-        "2026-09-21 · M1 Pro / 32 GiB · macOS 27.0 · 3456 × 2234 px · PurePin v0.9.0",
+        f"{recorded_date} · {env['processor'].replace('Apple ', '')} / {env['memory_gib']} GiB · {env['os_version']} · {pixels[0]} × {pixels[1]} px · PurePin v{version}",
         color=MUTED, fontsize=11,
     )
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT, format="svg", facecolor=PAPER, metadata={
-        "Title": "Memory, measured. — PurePin Release benchmark, 2026-09-21",
+        "Title": f"Memory, measured. — PurePin Release benchmark, {recorded_date}",
         "Description": "Three separate 20-cycle sessions. Each plotted point is the final physical footprint sample after that capture closes. Final idle medians and visible sampled peaks are shown separately. This is an instrumented Release build, not a distribution-binary benchmark or product ranking.",
         "Creator": "PurePin / Matplotlib",
-        "Date": data["recorded_local_date"],
+        "Date": recorded_date,
     })
     # Keep Matplotlib's vector paths and coordinate system; use a natural README size.
     ET.register_namespace("", "http://www.w3.org/2000/svg")
